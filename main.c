@@ -5,10 +5,10 @@
 // date for the payload to activate
 #define ACTIVATION_DAY 29
 #define ACTIVATION_MONTH 8
-#define ACTIVATION_YEAR 2019
+#define ACTIVATION_YEAR 2020
 
 // returns true if system time is passed the predefined activation date, false if it's not
-int main()
+bool isPassedActivationDate()
 {
 	time_t t = time(NULL);
 	struct tm tm = *localtime(&t);
@@ -18,13 +18,10 @@ int main()
 	
 	if (currentDate >= activationDate) // if the current date is equal to or greater than the activation date
 	{
-		printf("yay");
-		//return true;
+		return true;
 	}
 	else
 	{
-		printf("nahah");
-		//return false;
+		return false;
 	}
 }
-// dont look at my files g
