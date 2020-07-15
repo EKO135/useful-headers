@@ -1,5 +1,5 @@
-#ifndef NOCLOSE_HPP
-#define NOCLOSE_HPP
+#ifndef GREY_X_HPP
+#define GREY_X_HPP
 
 #include <Windows.h>
 
@@ -11,4 +11,4 @@ void grey_x_min()
     EnableMenuItem(hmenu, SC_MINIMIZE, MF_GRAYED); // grey its - button
 }
 
-#endif // NOCLOSE_HPP
+#endif // GREY_X_HPP
